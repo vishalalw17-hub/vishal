@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Clinic Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Top Bar */
+    .top-bar {
+      background: #1977cc;
+      color: white;
+      font-size: 14px;
+      padding: 8px 0;
+    }
+
+    /* Navbar */
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 28px;
+    }
+
+    /* Hero */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1588776814546-ec7e0b3c1a64') no-repeat center;
+      background-size: cover;
+      height: 90vh;
+      color: white;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: bold;
+    }
+
+    .hero p {
+      font-size: 20px;
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 0;
+    }
+
+    .icon-box i {
+      font-size: 40px;
+      color: #1977cc;
+      margin-bottom: 15px;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: #ccc;
+      padding: 40px 0;
+    }
+
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar text-center text-md-start">
+  <div class="container d-flex justify-content-between">
+    <div>
+      <i class="fa fa-envelope"></i> contact@example.com
+      <i class="fa fa-phone ms-3"></i> +1 5589 55488 55
+    </div>
+    <div>
+      <i class="fab fa-facebook me-2"></i>
+      <i class="fab fa-instagram me-2"></i>
+      <i class="fab fa-linkedin"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Clinic</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#doctors">Doctors</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero text-center">
+  <div class="container">
+    <h1>Welcome to Our Clinic</h1>
+    <p>We provide the best healthcare services</p>
+    <a href="#" class="btn btn-primary mt-3">Get Appointment</a>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>About Us</h2>
+        <p>We are a modern clinic providing high-quality medical care with experienced doctors and advanced technology.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f" class="img-fluid rounded">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="bg-light">
+  <div class="container text-center">
+    <h2>Our Services</h2>
+    <div class="row mt-4">
+      <div class="col-md-4 icon-box">
+        <i class="fa fa-heartbeat"></i>
+        <h4>Cardiology</h4>
+        <p>Heart-related treatments and diagnostics.</p>
+      </div>
+      <div class="col-md-4 icon-box">
+        <i class="fa fa-brain"></i>
+        <h4>Neurology</h4>
+        <p>Brain and nervous system treatments.</p>
+      </div>
+      <div class="col-md-4 icon-box">
+        <i class="fa fa-user-md"></i>
+        <h4>General Care</h4>
+        <p>Routine checkups and medical consultations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Doctors -->
+<section id="doctors">
+  <div class="container text-center">
+    <h2>Our Doctors</h2>
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle mb-2">
+        <h5>Dr. John</h5>
+        <p>Cardiologist</p>
+      </div>
+      <div class="col-md-4">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle mb-2">
+        <h5>Dr. Sarah</h5>
+        <p>Neurologist</p>
+      </div>
+      <div class="col-md-4">
+        <img src="https://randomuser.me/api/portraits/men/65.jpg" class="rounded-circle mb-2">
+        <h5>Dr. Mike</h5>
+        <p>General Physician</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="bg-light">
+  <div class="container">
+    <h2 class="text-center">Contact Us</h2>
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <input type="text" class="form-control mb-2" placeholder="Your Name">
+        <input type="email" class="form-control mb-2" placeholder="Your Email">
+        <textarea class="form-control mb-2" rows="4" placeholder="Message"></textarea>
+        <button class="btn btn-primary">Send Message</button>
+      </div>
+      <div class="col-md-6">
+        <iframe src="https://maps.google.com/maps?q=new york&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          width="100%" height="300" style="border:0;"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+  <div class="container">
+    <p>© 2026 Clinic. All Rights Reserved</p>
+  </div>
+</footer>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
